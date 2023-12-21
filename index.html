@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="shortcut icon" href="./icons8-bookmark-120.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container w-75">
+      <h1 class="text-center py-5 fw-bold">Bookmarker</h1>
+      <p class="fs-2 my-3 mb-5 text-center">
+        <i class="fa-solid fa-bookmark"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+      </p>
+
+      <label for="siteName">
+        <i class="fa-solid fa-book-bookmark me-3"></i>
+        Site Name
+      </label>
+      <input
+        type="text"
+        id="siteName"
+        placeholder="Bookmark Name..."
+        class="form-control py-2 my-2 mb-5"
+      />
+
+      <label for="siteURL">
+        <i class="fa-solid fa-link me-3"></i>
+        Site URL
+      </label>
+      <input
+        type="text"
+        id="siteURL"
+        placeholder="Website URL..."
+        class="form-control py-2 my-2 mb-5"
+      />
+
+      <div class="text-center">
+        <button
+          id="submit"
+          onclick="addSite()"
+          class="btn btn-success btn-lg px-5 fs-4"
+        >
+          Submit
+        </button>
+        <button
+          id="update"
+          onclick="updateSite()"
+          class="btn btn-success btn-lg px-5 fs-4 d-none"
+        >
+          Update
+        </button>
+      </div>
+
+      <input
+        onkeyup="search(this.value)"
+        type="search"
+        id="search"
+        placeholder="Search by Site Name..."
+        class="form-control my-5 py-2 w-50 m-auto"
+      />
+
+      <div class="row py-5 g-5" id="row">
+        <!-- <div class="col-lg-4 col-md-6 ">
+          <div class="inner  p-3 text-center rounded-4">
+
+            <div class="cardIndex bg-info my-3 rounded-circle">1</div>
+            <h3>ahmed</h3>
+
+            <div class="icons  d-flex justify-content-evenly mt-3 fs-5">
+              <div  class="layer-close ">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>Delete</span>
+              </div>
+              <div  class="layer-update">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Update</span>          
+              </div>
+              <div  class="layer-visit">
+                <a href="">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Visit</span>
+                </a>          
+              </div>
+            </div>
+            
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

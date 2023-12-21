@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(8, 226, 226);
+    font-family: 'Righteous', sans-serif;
+    
+}
+h1{
+    letter-spacing: 2px;
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px dotted #000;
+    font-family: 'Pacifico', cursive;
+}
+h1::after{
+    content: "";
+    width: 300px;
+    height: 20px;
+    background-color: rgba(22, 21, 21, 0.501);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: -1;
+    transition: 1s all;
+
+}
+h1:hover::after {
+    top: 55%;
+    height: 45px;
+
+}
+
+
+label{
+    font-size: 18px;
+}
+
+button{
+    letter-spacing: 2px;
+}
+.inner{
+    background-color: rgba(0, 128, 128, 0.606);
+    box-shadow: 0px 0px 20px #000000c1;
+}
+.inner .cardIndex{
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    padding: 5px;
+    background-color: #eee;
+}
+.icons span{
+    display: none;
+    transition: all 2s ;
+}
+.icons div{
+    cursor: pointer;
+}
+.icons .layer-close:hover span,
+.icons .layer-update:hover span,
+.icons .layer-visit:hover span{
+    display: inline-block;
+    color: #eeeeeed6;
+
+}
+
+
+
